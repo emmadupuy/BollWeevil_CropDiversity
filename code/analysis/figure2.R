@@ -99,9 +99,25 @@ make_map <- function(variable, legend_title) {
 }
 diversity_map <- make_map("ginisimpson", "Gini-Simpson index (1890)")
 ruggedness_map <- make_map("ruggedness", "Terrain ruggedness index")
+# Assemble both panels into the single file required by the journal. The
+# 20-by-7-inch canvas preserves each panel's original 10-by-7-inch layout.
+figure2 <- cowplot::plot_grid(
+  diversity_map,
+  ruggedness_map,
+  labels = c("(a)", "(b)"),
+  label_size = 18,
+  label_fontface = "bold",
+  label_x = 0.015,
+  label_y = 0.985,
+  hjust = 0,
+  vjust = 1,
+  nrow = 1,
+  align = "hv",
+  axis = "tblr",
+  rel_widths = c(1, 1)
+)
+
 output_dir <- "../output/figures"
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
-ggsave(file.path(output_dir, "Figure2a.pdf"), plot = diversity_map,
-       width = 10, height = 7, units = "in", bg = "white")
-ggsave(file.path(output_dir, "Figure2b.pdf"), plot = ruggedness_map,
-       width = 10, height = 7, units = "in", bg = "white")
+ggsave(file.path(output_dir, "Figure2.pdf"), plot = figure2,
+       width = 20, height = 7, units = "in", bg = "white")
