@@ -1,0 +1,11 @@
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+data/raw/**
+!data/raw/
+!data/raw/README.md
+!data/raw/**/
+!data/raw/**/README.md
+data/intermediate/.build/

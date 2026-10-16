@@ -1,0 +1,33 @@
+\begingroup
+\centering
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccc}
+   \toprule \toprule
+   Dependent Variable: & \multicolumn{4}{c}{Boll Weevil Presence} \\
+   Model: & (1) & (2) & (3) & (4) \\
+    & IV & IV & IV & IV \\
+   \midrule
+   Crop Diversity (Gini-Simpson) & -1.975$^{***}$ & -1.529$^{***}$ & -1.546$^{**}$ & -0.858$^{***}$ \\
+    & (0.735) & (0.473) & (0.689) & (0.304) \\
+   State $\times$ Decade FE & Yes & Yes & Yes & Yes \\
+    &  &  &  &  \\
+   Sample & Baseline & Through first & Contamination & Ever cotton \\
+    &  & contamination & boundary & 1890--1930 \\
+   \midrule
+   Observations & 3,895 & 3,407 & 771 & 4,653 \\
+   Number of Clusters & 1,080 & 1,048 & 652 & 1,161 \\
+   R$^2$ & 0.72 & 0.74 & 0.64 & 0.81 \\
+    &  &  &  &  \\
+   Mean Boll Weevil & 0.33 & 0.24 & 0.60 & 0.29 \\
+   SD Boll Weevil & 0.47 & 0.43 & 0.49 & 0.45 \\
+   Mean Gini-Simpson & 0.544 & 0.544 & 0.519 & 0.534 \\
+   SD Gini-Simpson & 0.054 & 0.056 & 0.079 & 0.056 \\
+    &  &  &  &  \\
+   \midrule
+   First Stage & -0.011 (0.003) & -0.013 (0.003) & -0.018 (0.005) & -0.014 (0.003) \\
+   Mean Ruggedness & 1.34 & 1.41 & 1.70 & 1.47 \\
+   SD Ruggedness & 1.27 & 1.32 & 1.53 & 1.41 \\
+   $F$-statistic & 37.4 & 57.0 & 25.1 & 78.1 \\
+   \bottomrule \bottomrule
+\end{tabular}
+\par\endgroup

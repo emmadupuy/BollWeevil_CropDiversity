@@ -1,0 +1,3 @@
+# Boll-weevil arrival records
+
+**Source:** County-level boll-weevil arrival data supplied by Christopher Muller and digitized from historical spread maps; the manuscript acknowledges Christopher Muller for sharing these data. The historical cleaning code expects `Analysis_Master_1900.xlsx` and retains the related 1910 and 1920 workbooks for provenance checking. A stable public download location has not been identified, so these files must be obtained from the authors or original data provider and are not redistributed here. They create the county-year boll-weevil contamination measures used in Figure 1 and the regression tables.

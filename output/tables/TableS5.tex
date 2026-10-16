@@ -1,0 +1,33 @@
+\begingroup
+\centering
+\begin{tabular}{lccc}
+   \toprule \toprule
+   Dependent Variable: & \multicolumn{3}{c}{Boll Weevil Presence} \\
+   Model: & (1) & (2) & (3) \\
+   \midrule
+  Crop Diversity (Gini-Simpson) & -1.975$^{***}$ & -1.874$^{***}$ & -1.773$^{***}$ \\
+  & (0.7345) & (0.6064) & (0.6065) \\
+   & & & \\
+   State $\times$ Year FE                 & Yes &  &  \\
+      State FE                 &  & Yes  & Yes \\
+      Year FE                 &  & Yes  &  Yes\\
+      State $\times$ Year Time Trend                 &  &   &  Yes\\
+
+   \midrule
+  Observations & 3,895 & 3,895 & 3,895 \\
+  Number of Clusters & 1,080 & 1,080 & 1,080 \\
+  R$^2$ & 0.724 & 0.573 & 0.651 \\
+   & & & \\
+  Mean Boll Weevil & 0.33 & 0.33 & 0.33 \\
+  SD Boll Weevil & 0.47 & 0.47 & 0.47 \\
+  Mean Gini-Simpson & 0.53 & 0.53 & 0.53 \\
+  SD Gini-Simpson & 0.06 & 0.05 & 0.06 \\
+
+   \midrule
+  First Stage & -0.010 (0.003) & -0.010 (0.003) & -0.011 (0.003) \\
+  Mean Ruggedness & 1.32 & 1.32 & 1.32 \\
+  SD Ruggedness & 1.22 & 1.22 & 1.22 \\
+  F-statistic & 37.4 & 44.2 & 45.7 \\
+   \bottomrule \bottomrule
+\end{tabular}
+\par\endgroup

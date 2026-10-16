@@ -1,0 +1,30 @@
+\begingroup
+\centering
+\begin{tabular}{lcccc}
+   \toprule \toprule
+   Dependent Variable: & \multicolumn{4}{c}{Boll Weevil Presence} \\
+   Model: & OLS & IV & OLS & IV \\
+   \midrule
+  Crop Diversity (Pielou Index) & -0.0159 & -2.695$^{***}$ & -0.0061 & -2.275$^{***}$ \\
+  & (0.0576) & (1.0427) & (0.0574) & (0.7592) \\
+   & & & & \\
+   State $\times$ Decade FE        & Yes & Yes & Yes & Yes \\
+   \midrule
+  Observations & 3,895 & 3,895 & 3,895 & 3,895 \\
+  Number of Clusters & 1,080 & 1,080 & 1,080 & 1,080 \\
+  R$^2$ & 0.8608 & 0.6973 & 0.8608 & 0.7479 \\
+   & & & & \\
+  
+  Mean Boll Weevil & 0.33 & 0.33 & 0.33 & 0.33 \\
+  SD Boll Weevil & 0.47 & 0.47 & 0.47 & 0.47 \\
+  Mean Pielou Index & 0.40 & 0.39 & 0.40 & 0.39 \\
+  SD Pielou Index & 0.09 & 0.05 & 0.09 & 0.05 \\
+   \midrule
+  First Stage (Ruggedness) &  & -0.008 (0.002) &  & -0.008 (0.002) \\
+  Mean Ruggedness &  & 1.34 &  & 1.34 \\
+  SD Ruggedness &  & 1.27 &  & 1.27 \\
+  F-statistic &  & 31.8 &  & 49.0 \\
+
+   \bottomrule \bottomrule
+\end{tabular}
+\par\endgroup

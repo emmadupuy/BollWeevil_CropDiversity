@@ -1,0 +1,89 @@
+SOFTWARE VERSIONS
+Recorded: 16 October 2026
+
+This is the environment used to validate the supplied-intermediate analysis.
+It is a version record, not a package lockfile.
+
+SYSTEM
+macOS 26.6.2, Apple silicon (arm64)
+
+R
+R 4.3.2 (2023-10-31)
+Platform: aarch64-apple-darwin20
+
+Spatial libraries reported by sf:
+GEOS 3.13.0
+GDAL 3.8.5
+PROJ 9.5.1
+
+R packages used by the bundled-data analysis:
+cowplot 1.1.1
+data.table 1.14.8
+dplyr 1.1.4
+fixest 0.11.2
+ggplot2 3.5.2
+raster 3.6-26
+R.utils 2.12.3
+sf 1.0-21
+stringr 1.5.1
+usmap 0.6.3
+
+R packages central to the raw-data construction code and installed in the
+validation environment:
+caret 6.0-94
+crunch 1.30.3
+data.table 1.14.8
+dplyr 1.1.4
+foreign 0.8-85
+haven 2.5.3
+httr 1.4.7
+labelled 2.12.0
+lubridate 1.9.3
+purrr 1.0.2
+readxl 1.4.3
+sp 2.1-2
+sf 1.0-21
+stringr 1.5.1
+tidyr 1.3.0
+tigris 2.0.4
+withr 2.5.2
+xgboost 1.7.6.1
+
+The recovered serialized continuous XGBoost model contains an XGBoost 1.5.0
+version tag. This differs from the package version used for the current audit.
+
+Raw-construction R packages referenced by the historical scripts but not
+installed in this validation environment:
+cdlTools
+CropScapeR
+exactextractr
+expss
+mice
+mlr
+parallelMap
+prism
+rasterVis
+rgeos
+rgdal
+rlist
+SpaDES
+stars
+
+PYTHON
+Python 3.14.2
+Platform: macOS arm64
+
+Python packages:
+geopandas 1.1.3
+numpy 2.4.4
+pandas 3.0.3
+pyproj 3.7.2
+rasterio 1.5.0
+Shapely 2.1.2
+
+Spatial libraries reported by rasterio:
+GDAL 3.12.1
+PROJ 9.7.1
+
+The optional GAEZ cleaning script also references rasterstats, which was not
+installed in this validation environment.
