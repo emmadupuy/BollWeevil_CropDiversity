@@ -1,4 +1,8 @@
 # Supplementary Figure 1: agricultural land share in Kansas, 2021.
+# This script uses raw data that are not distributed with the replication
+# package but can be downloaded free of charge. See the README files in
+# data/raw/cropland_data_layer/ and data/raw/geography/ for sources, filenames,
+# and download instructions.
 # Open replication.Rproj, then run this file from top to bottom (or click Source).
 # Paths are relative to code/; this script does not change the working directory.
 
