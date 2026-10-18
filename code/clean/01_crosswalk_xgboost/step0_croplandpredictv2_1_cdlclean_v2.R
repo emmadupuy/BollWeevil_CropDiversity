@@ -82,7 +82,7 @@ topographics_reclassify <- function(elem){
 
 ## Elevation ##
 
-# Elevation is one band - -9999 for NA, seems to be elevation in m
+# Elevation is one band - -9999 for NA
 # Split to accomodate memory limitations
 elevation <- raster(raw_file(
   "landfire", "LF2020_Elev_220_CONUS", "Tif", "LC20_Elev_220.tif"
